@@ -11,11 +11,19 @@
 /* Global */
 
 body {
-  background-image: url("../img/bg.png");
+  font-family: PT Sans;
+  font: size 21px;
+  line-height: 26px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+.background {
+  background-image: url(../img/background_photo_sedona.jpg);
   background-position: top center;
   background-repeat: no-repeat;
+  padding: 100px;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -33,22 +41,6 @@ img {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-}
-
-.Information {
-  text-align: left;
-}
-
-.Photo and video {
-  text-align: left;
-}
-
-.State map {
-  text-align: right;
-}
-
-.Hotels {
-  text-align: right;
 }
 
 .site-navigation-first {
@@ -71,14 +63,14 @@ img {
 .feature-item {
   font-size: 21px;
   line-height: 21px;
-  display: flex;
+
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   background-color: var(--basic-blue);
 }
 
-.Description {
+.description {
   list-style: none;
   font-size: 21px;
   line-height: 21px;
@@ -88,30 +80,50 @@ img {
   list-style: none;
 }
 
-.house,
-.Description-house {
+.house {
   text-align: left;
 }
+.description-house {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
 
-.food,
-.Description-food {
+.food {
   text-align: center;
 }
-
-.souvenirs,
-.Description-souvenirs {
-  text-align: right;
+.description-food {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
-.Devil-bridge {
+.souvenirs {
   text-align: right;
+}
+.description-souvenirs {
+  text-align: right;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.devil-bridge {
   font-size: 21px;
   line-height: 21px;
   background-color: var(--basic-blue);
 }
 
-.road,
-road description {
+.road {
+  font-size: 21px;
+  line-height: 21px;
+}
+road-description {
   text-align: center;
   font-size: 21px;
   line-height: 21px;
@@ -125,14 +137,22 @@ road description {
 
 .places-tourists {
   text-align: right;
-  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 21px;
 }
 
-.Area,
-attractions {
+.area {
   text-align: left;
   font-size: 21px;
+  line-height: 21px;
+}
+attractions {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
   line-height: 21px;
 }
 
