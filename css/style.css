@@ -11,22 +11,17 @@
 /* Global */
 
 body {
-  font-family: PT Sans;
-  font: size 21px;
+  font-family: "PT Sans" Arial, sans-serif;
+  font-size: 14px;
   line-height: 26px;
-  font-weight: normal;
+  font-weight: var(--font-normal);
+  font-weight: var(--font-bold);
   margin: 0px;
   padding: 0px;
 }
+
 .background {
-  background-image: url(../img/background_photo_sedona.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding: 100px;
-}
-img {
-  max-width: 100%;
-  height: auto;
+  background-color: var(--basic-grey);
 }
 
 /* Main navigation */
@@ -35,8 +30,11 @@ img {
   text-align: left;
 }
 
+.site-navigation-second {
+  text-align: right;
+}
+
 .main-navigation {
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -54,24 +52,16 @@ img {
 
 .title {
   text-align: center;
-  font-size: 21px;
-  line-height: 26px;
 }
 
 /* features */
 
 .feature-item {
-  font-size: 21px;
-  line-height: 21px;
-
-  align-items: center;
   text-align: center;
-  text-transform: uppercase;
   background-color: var(--basic-blue);
 }
 
-.description {
-  list-style: none;
+.city {
   font-size: 21px;
   line-height: 21px;
 }
@@ -82,51 +72,48 @@ img {
 
 .house {
   text-align: left;
+  font-size: 21px;
+  line-height: 21px;
 }
 .description-house {
   text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .food {
   text-align: center;
+  font-size: 21px;
+  line-height: 21px;
 }
 .description-food {
   text-align: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
 }
 
 .souvenirs {
   text-align: right;
+  font-size: 21px;
+  line-height: 21px;
 }
 .description-souvenirs {
   text-align: right;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+}
+
+.devil {
+  background-color: var(--basic-blue);
 }
 
 .devil-bridge {
   font-size: 21px;
   line-height: 21px;
-  background-color: var(--basic-blue);
 }
 
 .road {
-  font-size: 21px;
-  line-height: 21px;
-}
-road-description {
   text-align: center;
   font-size: 21px;
   line-height: 21px;
+}
+
+.road-description {
+  text-align: center;
 }
 
 .tourists {
@@ -137,8 +124,6 @@ road-description {
 
 .places-tourists {
   text-align: right;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
@@ -148,17 +133,12 @@ road-description {
   font-size: 21px;
   line-height: 21px;
 }
-attractions {
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
 
 .booking {
   text-align: center;
 }
+
+/* interest */
 
 .interest {
   font-size: 30px;
