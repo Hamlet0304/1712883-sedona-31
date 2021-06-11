@@ -6,22 +6,19 @@
   --basic-blue: #81b3d2;
   --basic-white: #ffffff;
   --basic-grey: #eeeeee;
-}
 
-/* variables typography */
-
-:root {
+  /* variables typography */
+  --main-font: "PT Sans", Arial, sans-serif;
   --regular-size: 14px;
-  --regilar-height: 26px;
+  --regular-height: 26px;
   --size: 21px;
   --height: 24px;
-}
+  --font-bold: 600;
 
-/* variables weight */
+  /* variables weight */
 
-:root {
   --weight: normal;
-  --regular-weight: bold;
+  --font-weight: bold;
 }
 
 /* Global */
