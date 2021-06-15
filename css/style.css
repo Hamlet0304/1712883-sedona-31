@@ -9,8 +9,8 @@
 
   /* variables typography */
   --main-font: "PT Sans", Arial, sans-serif;
-  --regular-size: 14px;
-  --regular-height: 26px;
+  --font-size: 14px;
+  --font-height: 26px;
   --size: 21px;
   --height: 24px;
   --font-bold: 600;
@@ -73,7 +73,7 @@ body {
 
 .city {
   font-size: var(--size);
-  line-height: var(--regilar-height);
+  line-height: var(--font-height);
 }
 
 /* advantages */
@@ -84,12 +84,12 @@ body {
 
 .advantages {
   font-size: var(--size);
-  line-height: var(--regilar-height);
+  line-height: var(--font-height);
 }
 
 .content-advantage {
-  font-size: var(--regular-size);
-  line-height: var(--regilar-height);
+  font-size: var(--font-size: );
+  line-height: var(--font-height);
 }
 
 /* devil */
@@ -100,19 +100,19 @@ body {
 
 .devil-bridge {
   font-size: var(--size);
-  line-height: var(--regilar-height);
+  line-height: var(--font-height);
 }
 
 /* city ​​description  */
 
 .city {
   font-size: var(--size);
-  line-height: var(--regilar-height);
+  line-height: var(--font-height);
 }
 
 .city-info {
-  font-size: var(--regular-size);
-  line-height: var(--regilar-height);
+  font-size: var(--font-size: );
+  line-height: var(--font-height);
 }
 
 /* interest */
@@ -133,7 +133,7 @@ body {
 
 .popup {
   font-size: var(--size);
-  line-height: var(--regilar-height);
+  line-height: var(--font-height);
   background-color: var(--basic-brown);
   color: var(--basic-white);
 }
