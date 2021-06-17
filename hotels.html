@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru"
-    <head>
-        <meta charset="UTF-8">
-        <title>Каталог отелей в Седоне</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+      <title>Каталог отелей в Седоне</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-<body>
-    <header>
-        <nav>
+    <link rel="icon" href="./img/icon/favicon_sedona.png"
+  </head>
+
+<body class="page-body inner-page">
+    <header class="header-inner-page">
+        <nav class="navigation-inner-page">
             <a href="index.html">
                 <img src="./img/icon/logo_sedona.svg" width="138" height="70" alt="логотип Седоны">
             </a>
-                <ul>
+                <ul class="inner-nav-first">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и Видео</a></li>
                 </ul>
 
-                <ul>
+                <ul class="inner-nav-second">
                     <li><a href="#">Карта штата</a></li>
                     <li><a>Гостиницы</a></li>
                 </ul>
@@ -25,52 +30,50 @@
 
 <main>
 
-<section>
-
-<h2>Фильтры</h2>
+<section class="about-the-place">
 
 <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset>
-        <legend>Инфраструктура:</legend>
-            <ul>
+        <legend class="infrastructure">ИНФРАСТРУКТУРА:</legend>
+            <ul class="infrastructure-description">
                 <li>
                     <input id="swimming-pool" type="checkbox" name="pool" checked>
-                    <label for="swimming-pool">Бассейн</label>
+                    <label class="about-infrastructure" for="swimming-pool">БАССЕЙН</label>
                 </li>
                 <li>
                     <input id="parking" type="checkbox" name="car-parking">
-                    <label for="parking">Парковка</label>
+                    <label class="about-infrastructure" for="parking">ПАРКОВКА</label>
                 </li>
                 <li>
                     <input id="wifi-connection" type="checkbox" name="internet">
-                    <label for="wifi-connection">WI-FI</label>
+                    <label class="about-infrastructure" for="wifi-connection">WI-FI</label>
                 </li>
             </ul>
     </fieldset>
 
     <fieldset>
-        <legend>Тип жилья:</legend>
-            <ul>
+        <legend class="type-of-housing">ТИП ЖИЛЬЯ:</legend>
+            <ul class="description-housing">
                 <li>
                     <input id="hotel" type="checkbox" name="hotel" checked>
-                    <label for="hotel">Гостиница</label>
+                    <label class="about-housing" for="hotel">ГОСТИНИЦА</label>
                 </li>
                 <li>
                     <input id="motel" type="checkbox" name="motel" checked>
-                    <label for="motel">Мотель</label>
+                    <label class="about-housing" for="motel">МОТЕЛЬ</label>
                 </li>
                 <li>
                     <input id="apartments" type="checkbox" name="apartments" checked>
-                    <label for="apartments">Апартаменты</label>
+                    <label class="about-housing" for="apartments">АПАРТАМЕНТЫ</label>
                 </li>
             </ul>
     </fieldset>
 
     <fieldset>
-        <legend>Стоимость в сутки, &#8381;:</legend>
-            <label for="from">От<input type="От" id="from" value="0"></label>
-            <label for="to">До<input type="До" id="to" value="3000"></label>
-            <button type="submit">Показать</button>
+        <legend class="about-the-price">СТОИМОСТЬ В СУТКИ, &#8381;:</legend>
+            <label class="price" for="from">ОТ<input type="От" id="from" value="0"></label>
+            <label class="price" for="to">ДО<input type="До" id="to" value="3000"></label>
+            <button class="search" type="submit">ПОКАЗАТЬ</button>
     </fieldset>
 
 </form>
@@ -79,42 +82,44 @@
 
 <section>
 
-        <h2>Найдено:<span>3</span></h2>
-        <p>Сортировка</p>
+        <p class="found">НАЙДЕНО: <span>3</span></p>
+        <p class="sorting">СОРТИРОВКА:</p>
 
-        <ul>
-            <li><a>По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По рейтингу</a></li>
+        <ul class="sorting-list">
+            <li class="sorting-item"><a>ПО ЦЕНЕ</a></li>
+            <li class="sorting-item"><a href="#">ПО ТИПУ</a></li>
+            <li class="sorting-item"><a href="#">ПО РЕЙТИНГУ</a></li>
         </ul>
 
-        </section>
+</section>
 
 <section>
+
     <div>
         <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>Amara Resort & Spa</h2>
-        <p>Гостиница от 4000 &#8381;</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <h2 class="hotel-name">Amara Resort & Spa</h2>
+        <p class="about-type">Гостиница от 4000 &#8381;</p>
+        <a class="more-details" href="#">Подробнее</a>
+        <a class="to-book" href="#">Забронировать</a>
         <p>Рейтинг: 8,5</p>
     </div>
     <div>
         <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>Desert Quail Inn</h2>
-        <p>Мотель от 3000 &#8381;</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
+        <h2 class="hotel-name">Desert Quail Inn</h2>
+        <p class="about-type">Мотель от 3000 &#8381;</p>
+        <a class="more-details" href="#">Подробнее</a>
+        <a class="to-book" href="#">Забронировать</a>
         <p>Рейтинг: 8,9</p>
     </div>
     <div>
         <img src="https://via.placeholder.com/150x100" alt="">
-        <h2>Villas at Poco Diablo</h2>
-        <p>Апартаменты от 2000 &#8381;</p>
-        <a href="#">Подробнее</a>
-        <a href="#">Забронировать</a>
-        <p>Рейтинг: 8,2</p>
+        <h2 class="hotel-name">Villas at Poco Diablo</h2>
+        <p class="about-type">Апартаменты от 2000 &#8381;</p>
+        <a class="more-details" href="#">Подробнее</a>
+        <a class="to-book" href="#">Забронировать</a>
+        <p class="rating">Рейтинг: 8,2</p>
     </div>
+
 </section>
 
 </main>
@@ -126,7 +131,7 @@
 
 
 
-        <ul>
+        <ul class="footer-social-list" >
             <li>
                 <a href="https://twitter.com/?lang=ru"><img src="./img/icon/twitter_logo.png" width="46" height="48"></a>
             </li>
