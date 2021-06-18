@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
       <title>Каталог отелей в Седоне</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic;display=swap">
+        <link href="normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
 
     <link rel="icon" href="./img/icon/favicon_sedona.png"
   </head>
@@ -16,12 +16,12 @@
             <a href="index.html">
                 <img src="./img/icon/logo_sedona.svg" width="138" height="70" alt="логотип Седоны">
             </a>
-                <ul class="inner-nav-first">
+                <ul class="inner-nav-left">
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и Видео</a></li>
                 </ul>
 
-                <ul class="inner-nav-second">
+                <ul class="inner-nav-right">
                     <li><a href="#">Карта штата</a></li>
                     <li><a>Гостиницы</a></li>
                 </ul>
@@ -34,15 +34,15 @@
 
 <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset>
-        <legend class="infrastructure">ИНФРАСТРУКТУРА:</legend>
+        <legend class="infrastructure">Инфраструктура:</legend>
             <ul class="infrastructure-description">
                 <li>
                     <input id="swimming-pool" type="checkbox" name="pool" checked>
-                    <label class="about-infrastructure" for="swimming-pool">БАССЕЙН</label>
+                    <label class="about-infrastructure" for="swimming-pool">Бассейн</label>
                 </li>
                 <li>
                     <input id="parking" type="checkbox" name="car-parking">
-                    <label class="about-infrastructure" for="parking">ПАРКОВКА</label>
+                    <label class="about-infrastructure" for="parking">Парковка</label>
                 </li>
                 <li>
                     <input id="wifi-connection" type="checkbox" name="internet">
@@ -52,28 +52,28 @@
     </fieldset>
 
     <fieldset>
-        <legend class="type-of-housing">ТИП ЖИЛЬЯ:</legend>
+        <legend class="type-of-housing">Тип жилья:</legend>
             <ul class="description-housing">
                 <li>
                     <input id="hotel" type="checkbox" name="hotel" checked>
-                    <label class="about-housing" for="hotel">ГОСТИНИЦА</label>
+                    <label class="about-housing" for="hotel">Гостиница</label>
                 </li>
                 <li>
                     <input id="motel" type="checkbox" name="motel" checked>
-                    <label class="about-housing" for="motel">МОТЕЛЬ</label>
+                    <label class="about-housing" for="motel">Мотель</label>
                 </li>
                 <li>
                     <input id="apartments" type="checkbox" name="apartments" checked>
-                    <label class="about-housing" for="apartments">АПАРТАМЕНТЫ</label>
+                    <label class="about-housing" for="apartments">Апартаменты</label>
                 </li>
             </ul>
     </fieldset>
 
     <fieldset>
-        <legend class="about-the-price">СТОИМОСТЬ В СУТКИ, &#8381;:</legend>
-            <label class="price" for="from">ОТ<input type="От" id="from" value="0"></label>
-            <label class="price" for="to">ДО<input type="До" id="to" value="3000"></label>
-            <button class="search" type="submit">ПОКАЗАТЬ</button>
+        <legend class="about-the-price">Стоимость в сутки, &#8381;:</legend>
+            <label class="price" for="from">От<input type="От" id="from" value="0"></label>
+            <label class="price" for="to">До<input type="До" id="to" value="3000"></label>
+            <button class="search" type="submit">Показать</button>
     </fieldset>
 
 </form>
@@ -82,13 +82,13 @@
 
 <section>
 
-        <p class="found">НАЙДЕНО: <span>3</span></p>
-        <p class="sorting">СОРТИРОВКА:</p>
+        <p class="found">Найдено: <span>3</span></p>
+        <p class="sorting">Сортировка:</p>
 
         <ul class="sorting-list">
-            <li class="sorting-item"><a>ПО ЦЕНЕ</a></li>
-            <li class="sorting-item"><a href="#">ПО ТИПУ</a></li>
-            <li class="sorting-item"><a href="#">ПО РЕЙТИНГУ</a></li>
+            <li class="sorting-item"><a>По цене</a></li>
+            <li class="sorting-item"><a href="#">По типу</a></li>
+            <li class="sorting-item"><a href="#">По рейтингу</a></li>
         </ul>
 
 </section>

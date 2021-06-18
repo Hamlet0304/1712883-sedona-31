@@ -12,7 +12,7 @@
   --main-font: "PT Sans", Arial, sans-serif;
   --font-size: 14px;
   --font-height: 26px;
-  --size: 21px;
+  --font-size-s: 21px;
   --height: 24px;
   --font-lh: 21px;
   --font-bold: 600;
@@ -87,7 +87,7 @@ body {
 }
 
 .advantages {
-  font-size: var(--size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
@@ -103,14 +103,14 @@ body {
 }
 
 .devil-bridge {
-  font-size: var(--size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
 /* city ​​description  */
 
 .city {
-  font-size: var(--size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .popup {
-  font-size: var(--size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
   background-color: var(--basic-brown);
   color: var(--basic-white);
@@ -153,16 +153,15 @@ body {
 /* inner page */
 
 .inner-page {
-  margin: 20px;
   background-color: var(--basic-grey);
 }
 
-.inner-nav-first {
+.inner-nav-left {
   list-style: none;
   font-weight: var(--font-bold);
 }
 
-.inner-nav-second {
+.inner-nav-right {
   list-style: none;
   font-weight: var(--font-bold);
 }
@@ -231,7 +230,7 @@ body {
 }
 
 .hotel-name {
-  font-size: var(--size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
