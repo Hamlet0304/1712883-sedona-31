@@ -10,9 +10,9 @@
   /* variables typography */
 
   --main-font: "PT Sans", Arial, sans-serif;
-  --font-size: 14px;
+  --font-size-s: 14px;
   --font-height: 26px;
-  --font-size-s: 21px;
+  --font-size-m: 21px;
   --height: 24px;
   --font-lh: 21px;
   --font-bold: 600;
@@ -76,7 +76,7 @@ body {
 }
 
 .city {
-  font-size: var(--size);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
 }
 
@@ -87,12 +87,12 @@ body {
 }
 
 .advantages {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
 }
 
 .content-advantage {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
@@ -103,19 +103,19 @@ body {
 }
 
 .devil-bridge {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
 }
 
 /* city ​​description  */
 
 .city {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
 }
 
 .city-info {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-height);
 }
 
@@ -136,7 +136,7 @@ body {
 }
 
 .popup {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
   background-color: var(--basic-brown);
   color: var(--basic-white);
@@ -185,7 +185,7 @@ body {
 }
 
 .about-infrastructure {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .about-housing {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
@@ -205,17 +205,17 @@ body {
 }
 
 .price {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
 .search {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
 .found {
-  font-size: var(--size);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
   font-weight: var(--font-bold);
 }
@@ -230,12 +230,12 @@ body {
 }
 
 .hotel-name {
-  font-size: var(--font-size-s);
+  font-size: var(--font-size-m);
   line-height: var(--font-height);
 }
 
 .about-type {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
@@ -243,7 +243,7 @@ body {
   background-color: var(--basic-blue);
   color: var(--basic-white);
   font-weight: var(--font-bold);
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
@@ -251,11 +251,11 @@ body {
   background-color: var(--basic-brown);
   color: var(--basic-white);
   font-weight: var(--font-bold);
-  font-size: var(--font-size);
+  font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
 
 .rating {
-  font-size: var(--font-size);
+  font-size: var(--font-size-s;
   line-height: var(--font-lh);
 }
