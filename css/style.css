@@ -36,9 +36,6 @@ body {
 
 .page-body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 .background {
@@ -51,36 +48,23 @@ body {
   height: 100%;
 }
 
-.main-header {
-  margin-bottom: 70px;
-
-  outline-offset: -5px;
-}
-
-.main-header-logo {
-  justify-self: center;
-
-  outline-offset: -5px;
-}
-
 /* Main navigation */
 
 .main-navigation {
-  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: var(--font-bold);
   font-size: var(--main-size);
   color: var(--basic-black);
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--basic-white);
-  margin: 0 auto;
-  padding: 0 10px;
+.main-header-logo {
+  margin: 0px auto;
 }
 
 .site-navigation-first {
+  order: -1;
   list-style: none;
   font-weight: var(--font-bold);
 }
@@ -97,17 +81,13 @@ body {
 
 /* features */
 
-.feature-item {
+.features-list {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-self: center;
-  background-color: var(--basic-blue);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.picture-city {
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-self: right;
+.feature-item {
+  background-color: var(--basic-blue);
 }
 
 .city {
@@ -118,17 +98,10 @@ body {
 /* description */
 
 .description {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
-  padding: 0;
+  list-style: none;
 }
 
 /* advantages */
-
-.description {
-  list-style: none;
-}
 
 .advantages {
   font-size: var(--font-size-m);
@@ -142,6 +115,10 @@ body {
 
 /* devil */
 
+.feature-item-devil {
+  background-color: var(--basic-blue);
+}
+
 .devil {
   background-color: var(--basic-blue);
 }
@@ -152,12 +129,6 @@ body {
 }
 
 /* city ​​description  */
-
-.city-description {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  background-color: var(--basic-grey);
-}
 
 .city {
   font-size: var(--font-size-m);
