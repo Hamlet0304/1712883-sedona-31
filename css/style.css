@@ -54,6 +54,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
   font-weight: var(--font-bold);
   font-size: var(--main-size);
   color: var(--basic-black);
@@ -83,27 +84,29 @@ body {
 
 .features-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
-.grid-item-first {
+.grid-item-primary {
   grid-column-start: 1;
   grid-column-end: 5;
 }
 
-.grid-item-second {
+.grid-item-primary-revers {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 4;
 }
 
-.grid-item-third {
+.grid-item-secondary {
   grid-column-start: 1;
   grid-column-end: 5;
+  margin: 0px;
+  padding: 0px;
 }
 
 .feature-item {
@@ -119,6 +122,8 @@ body {
 
 .description {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* advantages */
