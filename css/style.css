@@ -226,28 +226,57 @@ body {
   background-color: var(--basic-grey);
 }
 
+.navigation-inner-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: var(--font-bold);
+  font-size: var(--main-size);
+  color: var(--basic-black);
+}
+
 .inner-nav-left {
   list-style: none;
+  font-weight: var(--font-bold);
+  order: -1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   font-weight: var(--font-bold);
 }
 
 .inner-nav-right {
   list-style: none;
   font-weight: var(--font-bold);
+  margin: 0;
+  padding: 0;
+  font-weight: var(--font-bold);
 }
 
 /* filter */
+
+.about-the-place {
+  display: grid;
+  grid-template-columns: min-content min-content 1fr;
+  margin: 0;
+  padding: 0;
+}
 
 .infrastructure {
   font-size: 16px;
   line-height: var(--font-lh);
   font-weight: var(--font-bold);
+  margin: 0;
+  padding: 0;
 }
 
 .type-of-housing {
   font-size: 16px;
   line-height: var(--font-lh);
   font-weight: var(--font-bold);
+  margin: 0;
+  padding: 0;
 }
 
 .infrastructure-description {
@@ -257,6 +286,8 @@ body {
 .about-infrastructure {
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+  margin: 0;
+  padding: 0;
 }
 
 .description-housing {
@@ -283,6 +314,8 @@ body {
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
+
+/* hotel search */
 
 .found {
   font-size: var(--font-size-m);
@@ -328,4 +361,18 @@ body {
 .rating {
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+}
+
+/* footer */
+
+.main-footer-inner {
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-social-list-inner {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
