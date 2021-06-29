@@ -226,16 +226,6 @@ body {
   background-color: var(--basic-grey);
 }
 
-.navigation-inner-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  font-weight: var(--font-bold);
-  font-size: var(--main-size);
-  color: var(--basic-black);
-}
-
 .inner-nav-left {
   list-style: none;
   font-weight: var(--font-bold);
@@ -256,9 +246,14 @@ body {
 
 /* filter */
 
-.about-the-place {
+.grid-inner-page {
   display: grid;
-  grid-template-columns: min-content min-content 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
+.about-the-place {
   margin: 0;
   padding: 0;
 }
@@ -366,7 +361,6 @@ body {
 /* footer */
 
 .main-footer-inner {
-  outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
