@@ -116,6 +116,8 @@ body {
 }
 
 .feature-item {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--basic-blue);
 }
 
@@ -124,11 +126,18 @@ body {
   line-height: var(--font-height);
 }
 
+.picture-city {
+  width: 800px;
+  height: 256px;
+}
+
 /* description */
 
 .description {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
-  padding: 0;
+  padding: 200px 0 82px 0;
   margin: 0;
 }
 
@@ -138,7 +147,7 @@ body {
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   margin: 0;
-  padding: 0;
+  padding: 0 0 25px 0;
 }
 
 .content-advantage {
@@ -151,6 +160,9 @@ body {
 /* devil */
 
 .feature-item-devil {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   background-color: var(--basic-blue);
 }
 
