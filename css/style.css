@@ -89,36 +89,41 @@ body {
 .features-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .grid-item {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: span 3;
 }
 
 .grid-item-primary {
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column: span 3;
   margin: 0;
   padding: 0;
 }
 
 .grid-item-primary-revers {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: span 3;
 }
 
 .grid-item-secondary {
-  grid-column-start: 1;
-  grid-column-end: 5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--basic-grey);
   margin: 0;
   padding: 0;
 }
 
 .feature-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   background-color: var(--basic-blue);
+  padding: 0;
+  margin: 0;
 }
 
 .city {
@@ -127,17 +132,17 @@ body {
 }
 
 .picture-city {
-  width: 800px;
-  height: 256px;
+  display: block;
 }
 
 /* description */
 
 .description {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  padding: 200px 0 82px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -146,15 +151,15 @@ body {
 .advantages {
   font-size: var(--font-size-m);
   line-height: var(--font-height);
-  margin: 0;
-  padding: 0 0 25px 0;
+  margin: 160px 0 0 0;
+  padding: 0 347px 25px 0;
 }
 
 .content-advantage {
   font-size: var(--font-size-s);
   line-height: var(--font-height);
-  margin: 0;
-  padding: 0;
+  margin: 0 0 82px 0;
+  padding: 0 124px 0 0;
 }
 
 /* devil */
@@ -162,7 +167,8 @@ body {
 .feature-item-devil {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
   background-color: var(--basic-blue);
 }
 
@@ -193,6 +199,12 @@ body {
 
 /* interest */
 
+.arrival-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .booking {
   text-align: center;
 }
@@ -203,7 +215,7 @@ body {
 }
 
 .date-of-travel {
-  font-size: 30px;
+  font-size: var(--font-size-s);
   line-height: var(--height);
 }
 
@@ -212,6 +224,10 @@ body {
   line-height: var(--font-height);
   background-color: var(--basic-brown);
   color: var(--basic-white);
+  margin: 0;
+  padding: 30px 124px 30px 124px;
+  width: 568px;
+  height: 86px;
 }
 
 .button-search {
