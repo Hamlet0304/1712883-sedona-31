@@ -219,7 +219,7 @@ body {
   line-height: var(--height);
 }
 
-.popup {
+.opening-window {
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   background-color: var(--basic-brown);
@@ -227,7 +227,6 @@ body {
   margin: 0;
   padding: 30px 124px 30px 124px;
   width: 568px;
-  height: 86px;
 }
 
 .button-search {
