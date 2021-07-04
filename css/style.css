@@ -280,9 +280,10 @@ body {
   padding: 0;
 }
 
-.about-the-place {
+.about-the-place fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .infrastructure {
@@ -352,6 +353,14 @@ body {
 .sorting-item {
   font-size: 12px;
   line-height: 18px;
+}
+
+.hotel-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 61px 0;
 }
 
 .hotel-name {
