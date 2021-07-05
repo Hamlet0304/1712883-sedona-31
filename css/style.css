@@ -280,9 +280,12 @@ body {
   padding: 0;
 }
 
-.about-the-place fieldset {
+.about-the-place {
   margin: 0;
   padding: 0;
+}
+
+.table-borders {
   border: none;
 }
 
