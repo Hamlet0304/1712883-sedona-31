@@ -32,10 +32,18 @@ body {
   line-height: 26px;
   margin: 0px;
   padding: 0px;
+  background-color: var(--basic-grey);
 }
 
 a {
   text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: var(--basic-white);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .page-body {
@@ -89,6 +97,15 @@ a {
   padding: 0;
   font-weight: var(--font-bold);
 }
+
+.site-navigation-first a {
+  color: var(--basic-black);
+}
+
+.site-navigation-second a {
+  color: var(--basic-black);
+}
+
 .site-navigation-second {
   display: flex;
   flex-wrap: wrap;
@@ -101,7 +118,7 @@ a {
 .user {
   text-transform: uppercase;
   display: block;
-  padding: 15px 134px 15px 72px;
+  padding: 30px 30px 30px 30px;
 }
 
 /* Container */
@@ -115,10 +132,12 @@ a {
 }
 
 .slogan {
+  text-align: center;
   text-transform: uppercase;
 }
 
 .text {
+  text-align: center;
   text-transform: uppercase;
   padding: 0 0 50px 0;
 }
@@ -132,6 +151,7 @@ a {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  counter-reset: list 0;
 }
 
 .grid-item {
@@ -142,6 +162,12 @@ a {
   grid-column: span 3;
   margin: 0;
   padding: 0;
+}
+
+.grid-item-counter::before {
+  counter-increment: list;
+  content: " - " counter(list) " - ";
+  width: 52px;
 }
 
 .grid-item-primary-revers {
@@ -166,14 +192,25 @@ a {
   margin: 0;
 }
 
-.city {
+.feature-item-reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-item-text {
+  padding: 47px;
+  margin: 0;
+}
+
+.present-city {
   font-size: var(--font-size-m);
   line-height: var(--font-height);
-  align-self: flex-start;
+  margin: 10px 10px 30px 10px;
+  color: var(--basic-white);
 }
 
 .sedona {
-  align-self: flex-end;
+  color: var(--basic-white);
+  margin: 10px 10px 30px 10px;
 }
 
 .picture-city {
@@ -209,14 +246,6 @@ a {
 
 /* devil */
 
-.feature-item-devil {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: var(--basic-blue);
-}
-
 .devil {
   background-color: var(--basic-blue);
 }
@@ -224,6 +253,8 @@ a {
 .devil-bridge {
   font-size: var(--font-size-m);
   line-height: var(--font-height);
+  margin: 10px 10px 30px 10px;
+  color: var(--basic-white);
 }
 
 /* city ​​description  */
@@ -247,7 +278,6 @@ a {
 .appointment {
   margin-top: 0;
   margin-bottom: 10px;
-  outline: 5px solid #ff0000;
   text-transform: uppercase;
 }
 
@@ -258,39 +288,98 @@ a {
 .interest {
   font-size: 30px;
   line-height: var(--height);
+  text-transform: uppercase;
 }
 
 .date-of-travel {
   font-size: var(--font-size-s);
   line-height: var(--height);
+  text-transform: uppercase;
+}
+
+.button-search {
+  text-transform: uppercase;
 }
 
 .opening-window {
+  text-transform: uppercase;
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   background-color: var(--basic-brown);
   color: var(--basic-white);
   margin: 0;
   padding: 30px 124px 30px 124px;
-  width: 568px;
+}
+
+.appointment-date label {
+  margin-bottom: 9px;
+  margin-left: 5px;
+  font-weight: var(--font-weight);
+}
+
+.appointment-date input {
+  background-color: var(--basic-grey);
+  border: none;
+  padding: 10px 10px 10px 10px;
+  width: 38%;
+  font-weight: var(--font-weight);
+}
+
+.guests {
+  text-transform: uppercase;
+  font-weight: var(--font-weight);
+  margin: 10px;
+  padding: 0;
+}
+
+.guests input {
+  background-color: var(--basic-grey);
+  border: none;
+  padding: 10px 10px 10px 10px;
+  width: 36%;
 }
 
 .button-search {
   background-color: var(--basic-blue);
+  padding: 20px;
+  margin: 10px;
+  width: 36%;
+  border: none;
 }
 
 /* footer */
 
 .main-footer {
+  text-align: center;
   outline-offset: -5px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.footer-social {
+  width: 145px;
+  justify-self: center;
+  text-align: center;
+}
+
 .footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-phone {
+  color: var(--basic-black);
+  font-weight: var(--font-bold);
 }
 
 /* INNER page */
