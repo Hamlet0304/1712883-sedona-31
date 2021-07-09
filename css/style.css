@@ -33,6 +33,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-color: var(--basic-grey);
+  text-transform: uppercase;
 }
 
 a {
@@ -88,7 +89,7 @@ a {
   margin: 0px auto;
 }
 
-.site-navigation-first {
+.site-navigation-left {
   display: flex;
   flex-wrap: wrap;
   order: -1;
@@ -98,15 +99,11 @@ a {
   font-weight: var(--font-bold);
 }
 
-.site-navigation-first a {
+.site-navigation-link {
   color: var(--basic-black);
 }
 
-.site-navigation-second a {
-  color: var(--basic-black);
-}
-
-.site-navigation-second {
+.site-navigation-right {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -115,7 +112,7 @@ a {
   font-weight: var(--font-bold);
 }
 
-.user {
+.site-navigation-item {
   text-transform: uppercase;
   display: block;
   padding: 30px 30px 30px 30px;
@@ -128,6 +125,7 @@ a {
   background-image: url(../img/background_photo_sedona.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: auto;
   height: 500px;
 }
 
@@ -166,8 +164,23 @@ a {
 
 .grid-item-counter::before {
   counter-increment: list;
-  content: " - " counter(list) " - ";
+  content: " -№ " counter(list) " - ";
   width: 52px;
+  position: absolute;
+  display: block;
+  bottom: 60px;
+  left: 500px;
+  color: var(--basic-white);
+}
+
+.grid-item-devil::before {
+  counter-increment: list;
+  content: " -№ " counter(list) " - ";
+  width: 52px;
+  position: absolute;
+  bottom: -590px;
+  right: 530px;
+  color: var(--basic-white);
 }
 
 .grid-item-primary-revers {
@@ -202,6 +215,7 @@ a {
 }
 
 .present-city {
+  position: relative;
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   margin: 10px 10px 30px 10px;
@@ -251,6 +265,7 @@ a {
 }
 
 .devil-bridge {
+  position: relative;
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   margin: 10px 10px 30px 10px;
@@ -259,18 +274,28 @@ a {
 
 /* city ​​description  */
 
+.city-country::before {
+  counter-increment: list;
+  content: " -№ " counter(list) " - ";
+  width: 52px;
+  position: absolute;
+  bottom: -840px;
+  color: var(--basic-black);
+}
+
 .city {
+  position: relative;
   font-size: var(--font-size-m);
   line-height: var(--font-height);
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 .city-info {
   font-size: var(--font-size-s);
   line-height: var(--font-height);
   margin: 0;
-  padding: 0;
+  padding: 10px;
 }
 
 /* interest */
@@ -311,13 +336,13 @@ a {
   padding: 30px 124px 30px 124px;
 }
 
-.appointment-date label {
+.appointment-date-label {
   margin-bottom: 9px;
   margin-left: 5px;
   font-weight: var(--font-weight);
 }
 
-.appointment-date input {
+.appointment-date-input {
   background-color: var(--basic-grey);
   border: none;
   padding: 10px 10px 10px 10px;
