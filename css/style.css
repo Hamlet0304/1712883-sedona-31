@@ -167,8 +167,9 @@ a {
   content: " -№ " counter(list) " - ";
   width: 52px;
   position: relative;
-  bottom: -60px;
-  left: 110px;
+  top: 60px;
+  left: 50%;
+  margin-left: -40px;
 }
 
 .grid-item-primary-revers {
