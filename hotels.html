@@ -7,23 +7,24 @@
         <link href="normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-    <link rel="icon" href="./img/icon/favicon_sedona.png"
+    <link rel="icon" href="./img/icon/favicon_sedona.png">
   </head>
 
 <body class="page-body inner-page">
+  <div class="wrapper">
     <header class="header-inner-page">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-                <img src="./img/icon/logo_sedona.svg" width="138" height="70" alt="логотип Седоны">
+                <img class="logo-sedona" src="./img/icon/logo_sedona.svg" width="138" height="70" alt="логотип Седоны">
             </a>
                 <ul class="inner-nav-left">
-                    <li><a href="#">Информация</a></li>
-                    <li><a href="#">Фото и Видео</a></li>
+                    <li class="inner-site-navigation-item"><a class="inner-site-navigation-link" href="#">Информация</a></li>
+                    <li class="inner-site-navigation-item"><a class="inner-site-navigation-link" href="#">Фото и Видео</a></li>
                 </ul>
 
                 <ul class="inner-nav-right">
-                    <li><a href="#">Карта штата</a></li>
-                    <li><a>Гостиницы</a></li>
+                    <li class="inner-site-navigation-item"><a class="inner-site-navigation-link" href="#">Карта штата</a></li>
+                    <li class="inner-site-navigation-item"><a>Гостиницы</a></li>
                 </ul>
         </nav>
     </header>
@@ -37,15 +38,15 @@
         <legend class="infrastructure">Инфраструктура:</legend>
             <ul class="infrastructure-description">
                 <li>
-                    <input id="swimming-pool" type="checkbox" name="pool" checked>
-                    <label class="about-infrastructure" for="swimming-pool">Бассейн</label>
+                    <input class="visually-hidden filter-input-checkbox" id="swimming-pool" type="checkbox" name="pool" checked>
+                    <label  class="about-infrastructure" for="swimming-pool">Бассейн</label>
                 </li>
                 <li>
-                    <input id="parking" type="checkbox" name="car-parking">
+                    <input class="visually-hidden filter-input-checkbox" id="parking" type="checkbox" name="car-parking">
                     <label class="about-infrastructure" for="parking">Парковка</label>
                 </li>
                 <li>
-                    <input id="wifi-connection" type="checkbox" name="internet">
+                    <input class="visually-hidden filter-input-checkbox" id="wifi-connection" type="checkbox" name="internet">
                     <label class="about-infrastructure" for="wifi-connection">WI-FI</label>
                 </li>
             </ul>
@@ -55,15 +56,15 @@
         <legend class="type-of-housing">Тип жилья:</legend>
             <ul class="description-housing">
                 <li>
-                    <input id="hotel" type="checkbox" name="hotel" checked>
+                    <input class="visually-hidden filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
                     <label class="about-housing" for="hotel">Гостиница</label>
                 </li>
                 <li>
-                    <input id="motel" type="checkbox" name="motel" checked>
+                    <input class="visually-hidden filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
                     <label class="about-housing" for="motel">Мотель</label>
                 </li>
                 <li>
-                    <input id="apartments" type="checkbox" name="apartments" checked>
+                    <input class="visually-hidden filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
                     <label class="about-housing" for="apartments">Апартаменты</label>
                 </li>
             </ul>
@@ -81,7 +82,7 @@
 </section>
 
 <section>
-
+      <div class="user">
         <p class="found">Найдено: <span>3</span></p>
         <p class="sorting">Сортировка:</p>
 
@@ -90,7 +91,7 @@
             <li class="sorting-item"><a href="#">По типу</a></li>
             <li class="sorting-item"><a href="#">По рейтингу</a></li>
         </ul>
-
+      </div>
 </section>
 
 <section>
@@ -129,19 +130,19 @@
     <p>#VISITSEDONA</p>
     <a class="footer-phone" href="tel:780055586286">+7 800 555-86-28</a>
   </div>
-
-        <ul class="footer-social-list-inner" >
+    <section class="footer-social">
+        <ul class="footer-social-list" >
             <li>
-                <a href="https://twitter.com/?lang=ru"><img src="./img/icon/twitter_logo.png" width="46" height="48"></a>
+                <a class="social-button" href="https://twitter.com/?lang=ru"><img src="./img/icon//twitter-logo.png" width="46" height="48"></a>
             </li>
             <li>
-                <a href="https://uk-ua.facebook.com/"><img src="./img/icon/facebook_logo.png" " width=" 46" height="48"></a>
+                <a class="social-button" href="https://uk-ua.facebook.com/"><img src="./img/icon//facebook-logo.png" " width=" 46" height="48"></a>
             </li>
             <li>
-                <a href="https://www.youtube.com/"><img src="./img/icon/youtube_logo.png" width="46" height="48"></a>
+                <a class="social-button" href="https://www.youtube.com/"><img src="./img/icon/youtube-logo.png" width="46" height="48"></a>
             </li>
         </ul>
-
+    </section>
 
 
 <p>
@@ -151,5 +152,6 @@
 
 </footer>
 
+</div>
 </body>
 </html>

@@ -392,8 +392,8 @@ a {
 }
 
 .inner-nav-left {
-  list-style: none;
-  font-weight: var(--font-bold);
+  display: flex;
+  flex-wrap: wrap;
   order: -1;
   list-style: none;
   margin: 0;
@@ -402,11 +402,22 @@ a {
 }
 
 .inner-nav-right {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
-  font-weight: var(--font-bold);
   margin: 0;
   padding: 0;
   font-weight: var(--font-bold);
+}
+
+.inner-site-navigation-link {
+  color: var(--basic-black);
+}
+
+.inner-site-navigation-item {
+  text-transform: uppercase;
+  display: block;
+  padding: 30px 30px 30px 30px;
 }
 
 /* filter */
@@ -416,6 +427,10 @@ a {
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
+  background-image: url(../img/background-inner-page.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: var(--basic-white);
 }
 
 .about-the-place {
@@ -448,10 +463,36 @@ a {
 }
 
 .about-infrastructure {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
-  margin: 0;
+  margin: 5px;
   padding: 0;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+  width: 17px;
+  height: 18px;
+  border: 2px solid var(--basic-white);
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -41px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/cheked.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .description-housing {
@@ -459,6 +500,12 @@ a {
 }
 
 .about-housing {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  margin: 5px;
+  padding: 0;
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
@@ -467,6 +514,11 @@ a {
   font-size: 16px;
   line-height: var(--font-lh);
   font-weight: var(--font-bold);
+}
+
+.user {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .price {
@@ -487,13 +539,26 @@ a {
   font-weight: var(--font-bold);
 }
 
+.sorting {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 0 30px;
+}
+
 .sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
   list-style: none;
+  margin: 10px;
 }
 
 .sorting-item {
   font-size: 12px;
   line-height: 18px;
+  padding: 0 0 0 10px;
 }
 
 .hotel-list {
@@ -510,6 +575,9 @@ a {
 }
 
 .about-type {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
 }
