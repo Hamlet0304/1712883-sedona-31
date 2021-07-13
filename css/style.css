@@ -387,6 +387,8 @@ a {
 
 /* INNER page */
 
+/* header */
+
 .inner-page {
   background-color: var(--basic-grey);
 }
@@ -421,6 +423,48 @@ a {
 }
 
 /* filter */
+
+.range-controls {
+  position: relative;
+  height: 80px;
+  padding-top: 39px;
+  border-radius: 5px;
+  height: 41px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: var(--basic-grey);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #f40d0d;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 240px;
+}
 
 .grid-inner-page {
   display: grid;
@@ -561,25 +605,31 @@ a {
   padding: 0 0 0 10px;
 }
 
+/* hotel list */
+
 .hotel-list {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
-  padding: 0 0 61px 0;
+  padding: 40px;
 }
 
 .hotel-name {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
   font-size: var(--font-size-m);
   line-height: var(--font-height);
+  padding: 0 0 10px 0;
+  margin: 0;
 }
 
 .about-type {
-  display: flex;
-  justify-content: center;
-  align-self: center;
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+  margin: 0;
+  padding: 0 0 10px 0;
 }
 
 .more-details {
@@ -588,6 +638,8 @@ a {
   font-weight: var(--font-bold);
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+  padding: 0;
+  margin: 0 0 10px 0;
 }
 
 .to-book {
@@ -596,16 +648,27 @@ a {
   font-weight: var(--font-bold);
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+  padding: 0;
+  margin: 0 0 10px 0;
 }
 
 .rating {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
   font-size: var(--font-size-s);
   line-height: var(--font-lh);
+  padding: 0;
+  margin: 0;
 }
 
 /* footer */
 
 .main-footer-inner {
+  text-align: center;
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }

@@ -72,9 +72,20 @@
 
     <fieldset class="table-borders">
         <legend class="about-the-price">Стоимость в сутки, &#8381;:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
             <label class="price" for="from">От<input type="От" id="from" value="0"></label>
             <label class="price" for="to">До<input type="До" id="to" value="3000"></label>
             <button class="search" type="submit">Показать</button>
+            </div>
+          </div>
     </fieldset>
 
 </form>
@@ -98,26 +109,32 @@
 
     <div class="hotel-list">
         <img src="./img/amara_sedona.jpg" alt="">
+        <div class="hotel-item">
         <h2 class="hotel-name">Amara Resort & Spa</h2>
         <p class="about-type">Гостиница от 4000 &#8381;</p>
         <a class="more-details" href="#">Подробнее</a>
         <a class="to-book" href="#">Забронировать</a>
-        <p>Рейтинг: 8,5</p>
+        </div>
+        <p class="rating">Рейтинг: 8,5</p>
     </div>
     <div class="hotel-list">
         <img src="./img/desert_sedona.jpg" alt="">
+        <div class="hotel-item">
         <h2 class="hotel-name">Desert Quail Inn</h2>
         <p class="about-type">Мотель от 3000 &#8381;</p>
         <a class="more-details" href="#">Подробнее</a>
         <a class="to-book" href="#">Забронировать</a>
-        <p>Рейтинг: 8,9</p>
+        </div>
+        <p class="rating">Рейтинг: 8,9</p>
     </div>
     <div class="hotel-list">
         <img src="./img/villas_sedona.jpg" alt="">
+        <div class="hotel-item">
         <h2 class="hotel-name">Villas at Poco Diablo</h2>
         <p class="about-type">Апартаменты от 2000 &#8381;</p>
         <a class="more-details" href="#">Подробнее</a>
         <a class="to-book" href="#">Забронировать</a>
+        </div>
         <p class="rating">Рейтинг: 8,2</p>
     </div>
 
