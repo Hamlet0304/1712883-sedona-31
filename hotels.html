@@ -39,15 +39,15 @@
             <ul class="infrastructure-description">
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="swimming-pool" type="checkbox" name="pool" checked>
-                    <label  class="about-infrastructure" for="swimming-pool">Бассейн</label>
+                    <label  class="about-infrastructure filter-input-label" for="swimming-pool">Бассейн</label>
                 </li>
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="parking" type="checkbox" name="car-parking">
-                    <label class="about-infrastructure" for="parking">Парковка</label>
+                    <label class="about-infrastructure filter-input-label" for="parking">Парковка</label>
                 </li>
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="wifi-connection" type="checkbox" name="internet">
-                    <label class="about-infrastructure" for="wifi-connection">WI-FI</label>
+                    <label class="about-infrastructure filter-input-label" for="wifi-connection">WI-FI</label>
                 </li>
             </ul>
     </fieldset>
@@ -57,15 +57,15 @@
             <ul class="description-housing">
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="hotel" type="checkbox" name="hotel" checked>
-                    <label class="about-housing" for="hotel">Гостиница</label>
+                    <label class="about-housing filter-input-label" for="hotel">Гостиница</label>
                 </li>
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="motel" type="checkbox" name="motel" checked>
-                    <label class="about-housing" for="motel">Мотель</label>
+                    <label class="about-housing filter-input-label" for="motel">Мотель</label>
                 </li>
                 <li>
                     <input class="visually-hidden filter-input-checkbox" id="apartments" type="checkbox" name="apartments" checked>
-                    <label class="about-housing" for="apartments">Апартаменты</label>
+                    <label class="about-housing filter-input-label" for="apartments">Апартаменты</label>
                 </li>
             </ul>
     </fieldset>
@@ -74,17 +74,17 @@
         <legend class="about-the-price">Стоимость в сутки, &#8381;:</legend>
           <div class="range-filter">
             <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+              <div class="range-controls-scale">
+                <div class="range-controls-bar"></div>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+                <div class="range-controls-toggle range-controls-toggle-min"></div>
+                <div class="range-controls-toggle range-controls-toggle-max"></div>
             </div>
             <div class="price-controls">
             <label class="price" for="from">От<input type="От" id="from" value="0"></label>
             <label class="price" for="to">До<input type="До" id="to" value="3000"></label>
-            <button class="search" type="submit">Показать</button>
             </div>
+            <button class="search" type="submit">Показать</button>
           </div>
     </fieldset>
 
@@ -93,14 +93,14 @@
 </section>
 
 <section>
-      <div class="user">
+      <div class="search-types">
         <p class="found">Найдено: <span>3</span></p>
         <p class="sorting">Сортировка:</p>
 
         <ul class="sorting-list">
-            <li class="sorting-item"><a>По цене</a></li>
-            <li class="sorting-item"><a href="#">По типу</a></li>
-            <li class="sorting-item"><a href="#">По рейтингу</a></li>
+            <li class="sorting-item"><a class="price-type">По цене</a></li>
+            <li class="sorting-item"><a class="type-and-rating" href="#">По типу</a></li>
+            <li class="sorting-item"><a class="type-and-rating" href="#">По рейтингу</a></li>
         </ul>
       </div>
 </section>
